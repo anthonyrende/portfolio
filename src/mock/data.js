@@ -23,6 +23,7 @@ export const aboutData = {
   paragraphTwo: '',
   paragraphThree: '',
   paragraphFour: '',
+  icon: 'right-arrow.png',
   resume: 'https://resume.creddle.io/resume/8hh4dzy7tmx',
   url: 'https://www.openprocessing.org/sketch/955851',
 };
@@ -32,7 +33,7 @@ export const projectsData = [
   {
     id: uuidv1(),
     img: 'bonk-app.png',
-    title: '$BONK!',
+    title: '$BONK! [2023]',
     subtitle: 'Full-Stack',
     info:
       ' $BONK is a meme-coin on Solana Blockchain that was created as a joke. Burning these tokens increases its value, so the idea is to burn as many as possible, which this app does and tracks the amount of burns and $BONK in your wallet',
@@ -51,7 +52,7 @@ export const projectsData = [
   {
     id: uuidv1(),
     img: 'musicplayer.png',
-    title: 'Chill Hop Player',
+    title: 'Chill Hop Player [2022]',
     subtitle: 'Front-End',
     info:
       'Chill Hop Player streams unlicensed free music known as Chill Hop. Users have access to a library of songs with the option to purchase them on various platforms to support the artists',
@@ -61,12 +62,12 @@ export const projectsData = [
     info4:
       '‣ Implemented State management via React hooks to distribute and lift state when necessary across the app',
     url: 'https://chillhop-player.netlify.app/',
-    repo: 'https://github.com/jazz-code/music-player',
+    repo: 'https://github.com/anthonyrende/music-player',
   },
   {
     id: uuidv1(),
     img: 'mud.png',
-    title: 'Multi-User-Dungeon (MUD)',
+    title: 'Multi-User-Dungeon [2021]',
     subtitle: 'Back-End',
     info:
       'Players can read or view descriptions of rooms, objects, and actions performed in the virtual world',
@@ -100,7 +101,7 @@ export const footerData = {
     // {
     //   id: uuidv1(),
     //   name: 'codepen',
-    //   url: 'https://codepen.io/Jazz-code',
+    //   url: 'https://codepen.io/anthonyrende',
     // },
     {
       id: uuidv1(),
@@ -110,7 +111,7 @@ export const footerData = {
     {
       id: uuidv1(),
       name: 'github',
-      url: 'https://www.github.com/jazz-code',
+      url: 'https://www.github.com/anthonyrende',
     },
   ],
 };

@@ -9,7 +9,7 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume, url } = about;
+  const { paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume, url, icon } = about;
   // ^ add in:img,
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -80,7 +80,7 @@ const About = () => {
                   }}
                 >
                   <img
-                    src="/right-arrow.png"
+                    src={icon}
                     alt="right-arrow icon"
                     width={20}
                     height={20}
@@ -104,7 +104,7 @@ const About = () => {
                   }}
                 >
                   <img
-                    src="/right-arrow.png"
+                    src={icon}
                     alt="right-arrow icon"
                     width={20}
                     height={20}
@@ -128,7 +128,7 @@ const About = () => {
                   }}
                 >
                   <img
-                    src="/right-arrow.png"
+                    src={icon}
                     alt="right-arrow icon"
                     width={20}
                     height={20}
@@ -152,7 +152,7 @@ const About = () => {
                   }}
                 >
                   <img
-                    src="/right-arrow.png"
+                    src={icon}
                     alt="right-arrow icon"
                     width={20}
                     height={20}
@@ -169,12 +169,13 @@ const About = () => {
                   </p>
                 </div>
                 {resume && (
-                  <span className="d-flex mt-3">
+                  <span className="d-flex mt-3 ">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
                       href={resume}
+                      style={{ width: '100%', borderRadius: '5px' }}
                     >
                       Resume
                     </a>
