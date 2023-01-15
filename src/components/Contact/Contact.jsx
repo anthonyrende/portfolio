@@ -11,34 +11,27 @@ const Contact = () => {
   return (
     <section id="contact">
       <Container>
-        <Title title="Contact" />
+        <Title
+          title="Contact"
+          style={{ textDecoration: 'none', fontFamily: 'alagard', fontSize: '3.5rem' }}
+        />
         <Fade bottom duration={1000} delay={800} distance="30px">
           <div className="contact-wrapper">
-            <p className="contact-wrapper__text">
+            <p
+              className="contact-wrapper__text "
+              style={{ textDecoration: 'none', fontSize: '3rem' }}
+            >
               {cta || 'Would you like to work with me? Awesome!'}
-              </p>
-              <form action="https://getform.io/f/cef6bcd6-5106-40a9-a594-b13fd3521ec6" method="POST">
-              <p>
-                <label className="contact-label">
-                  <input placeholder="Your Name: " className="contact-input" type="text" name="name" />
-                  </label>
-              </p>
-              <p>
-                <label className="contact-label">
-                  <input placeholder="Your Email: " className="contact-input" type="email" name="email" />
-                  </label>
-              </p>
-              <p>
-                <label className="text-label">
-                  <textarea cols="22" rows="5" placeholder="Send me a message here..." className="contact-textarea" name="message"></textarea>
-                  </label>
-              </p>
-              <p>
-                <button target="_blank" type="submit"  className="cta-btn cta-btn--resume"> 
-                {btn || "Let's Talk"}
-                </button>
-              </p>
-            </form>
+            </p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-btn cta-btn--resume drop-shadow-outline-small"
+              href={email ? `mailto:${email}` : 'https://github.com/cobidev/react-simplefolio'}
+              style={{ textDecoration: 'none', fontFamily: 'alagard' }}
+            >
+              {btn || "Let's Talk"}
+            </a>
           </div>
         </Fade>
       </Container>

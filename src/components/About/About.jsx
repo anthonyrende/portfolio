@@ -9,7 +9,7 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume, url, img } = about;
+  const { paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume, url } = about;
   // ^ add in:img,
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -66,23 +66,108 @@ const About = () => {
           </Col>
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text">
-                  {paragraphOne ||
-                    "I'm a Software Developer with experience on both ends of the stack, focused on providing meaningful, genuine contributions to colleagues, stakeholders, and end-users"}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'Experienced in building products in a team setting with daily collaboration in software development subjects'}
-                </p>
-                <p className="about-wrapper__info-skills">
-                  {paragraphThree ||
-                    'My main skills are JavaScript, ES6+, React, HTML/CSS, Node/Express, REST, Python, SQL, PostgreSQL, Jest, Linux '}
-                </p>
-                <p className="about-wrapper__info-text">
-                  {paragraphFour ||
-                    'When I’m not coding-- I love to consume sci-fi, sharpen my guitar skills, or experience new places around NYC and indulge my love for live music'}
-                </p>
+              <div
+                className="about-wrapper__info"
+                style={{
+                  color: 'black',
+                }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    // flex row
+                    flexDirection: 'row',
+                  }}
+                >
+                  <img
+                    src="/right-arrow.png"
+                    alt="right-arrow icon"
+                    width={20}
+                    height={20}
+                    style={{
+                      marginRight: '20px',
+                      // center vertically
+                      // alignSelf: 'center',
+                      marginTop: '10px',
+                    }}
+                  />
+                  <p className="about-wrapper__info-text">
+                    {paragraphOne ||
+                      "I'm a Brooklyn based Software Developer with experience on *both* ends of the stack, focused on shipping meaningful, genuine contributions to colleagues, stakeholders, and end-users"}
+                  </p>
+                </div>
+                <div
+                  style={{
+                    display: 'flex',
+                    // flex row
+                    flexDirection: 'row',
+                  }}
+                >
+                  <img
+                    src="/right-arrow.png"
+                    alt="right-arrow icon"
+                    width={20}
+                    height={20}
+                    style={{
+                      marginRight: '20px',
+                      // center vertically
+                      // alignSelf: 'center',
+                      marginTop: '10px',
+                    }}
+                  />
+                  <p className="about-wrapper__info-text">
+                    {paragraphTwo ||
+                      'Experienced in building products in a team setting with daily collaboration in software development, testing, and deployment'}
+                  </p>
+                </div>
+                <div
+                  style={{
+                    display: 'flex',
+                    // flex row
+                    flexDirection: 'row',
+                  }}
+                >
+                  <img
+                    src="/right-arrow.png"
+                    alt="right-arrow icon"
+                    width={20}
+                    height={20}
+                    style={{
+                      marginRight: '20px',
+                      // center vertically
+                      // alignSelf: 'center',
+                      marginTop: '10px',
+                    }}
+                  />
+                  <p className="about-wrapper__info-skills">
+                    {paragraphThree ||
+                      'My main skills are TypeScript, React, Tailwind, Node/Express, REST & GraphQL, Apollo, Python, PostgreSQL, Linux and other tools in the JAM stack'}
+                  </p>
+                </div>
+                <div
+                  style={{
+                    display: 'flex',
+                    // flex row
+                    flexDirection: 'row',
+                  }}
+                >
+                  <img
+                    src="/right-arrow.png"
+                    alt="right-arrow icon"
+                    width={20}
+                    height={20}
+                    style={{
+                      marginRight: '20px',
+                      // center vertically
+                      // alignSelf: 'center',
+                      marginTop: '10px',
+                    }}
+                  />
+                  <p className="about-wrapper__info-text ">
+                    {paragraphFour ||
+                      'In the unlikely event that Im not hunched over a computer, I love to practice yoga, play video games, consume sci-fi, sharpen my guitar skills, or catch a show around NYC ^_^'}
+                  </p>
+                </div>
                 {resume && (
                   <span className="d-flex mt-3">
                     <a

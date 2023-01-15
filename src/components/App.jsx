@@ -26,6 +26,9 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+      <div id="stars" />
+      <div id="stars2" />
+      <div id="stars3" />
       <Hero />
       <About />
       <Projects />

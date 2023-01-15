@@ -28,6 +28,11 @@ a:hover {
   font-size: $big-font-size;
   font-weight: bold;
   text-transform: uppercase;
+  color: black;
+  // background: ;
+  // background: url('https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/e5fd04dbf0c146b.png') no-repeat;
+  background-size: 100% 100%;
+  // -webkit-background-clip: text;
 
   @include respond(phone) {
     font-size: 2.8rem;

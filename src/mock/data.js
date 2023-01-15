@@ -31,23 +31,22 @@ export const aboutData = {
 export const projectsData = [
   {
     id: uuidv1(),
-    img: 'welldone.png',
-    title: 'WellDone',
+    img: 'bonk-app.png',
+    title: '$BONK!',
     subtitle: 'Full-Stack',
     info:
-      ' WellDone International, a non-profit working to improve global access to clean water by providing reports on well activity that may facilitate technical assistance to malfunctioning wells',
-    info2: 'Tech Stack: React | Node | Expess | PostgreSQL | Knex | EmotionCSS ',
+      ' $BONK is a meme-coin on Solana Blockchain that was created as a joke. Burning these tokens increases its value, so the idea is to burn as many as possible, which this app does and tracks the amount of burns and $BONK in your wallet',
+    info2: 'Tech Stack: NextJS | TypeScript | Pocketbase | Solana ',
     info3:
-      '‣ Refactored and built onto an existing frontend in a team of 5, utilizing React with SemanticUI & EmotionCSS',
+      '‣ Full-stack web app in NextJS / Pocketbase stores your wallet as a user and tracks the amount of $BONK in your wallet and the amount of burns',
     info4:
-      '‣ Key contributor in successful deployment of a data persisting backend utilizing Node, Express, PostgreSQL and Heroku deployment',
-    info5:
-      '‣ Learned Node/Express for this project specifically and contributed greatly to its launch ',
+      '‣ Integrated Solana Blockchain to interact with the $BONK contract to send and receive transactions  ',
+    info5: '‣ Hosted on Linode, deployed to Vercel and connected to a custom domain',
     info6: '',
     info7: '',
     info8: '',
-    url: 'https://welldone-water.now.sh/',
-    repo: 'https://github.com/labs17-WellDone/backend',
+    url: 'https://bonk-ecru.vercel.app/',
+    // repo: 'https://github.com/labs17-WellDone/backend',
   },
   {
     id: uuidv1(),
