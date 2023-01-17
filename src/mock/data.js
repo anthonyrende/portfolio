@@ -36,13 +36,13 @@ export const projectsData = [
     title: '$BONK! [2023]',
     subtitle: 'Full-Stack',
     info:
-      ' $BONK is a meme-coin on Solana Blockchain that was created as a joke. Burning these tokens increases its value, so the idea is to burn as many as possible, which this app does and tracks the amount of burns and $BONK in your wallet',
+      ' $BONK is a meme-coin on Solana Blockchain that was created as a joke. Burning these tokens increases its value, so the idea is to burn as many as possible, which this app does and tracks the amount of burns and $BONK in your wallet as a user stored in Pocketbase',
     info2: 'Tech Stack: NextJS | TypeScript | Pocketbase | Solana ',
     info3:
-      '‣ Full-stack web app in NextJS / Pocketbase stores your wallet as a user and tracks the amount of $BONK in your wallet and the amount of burns',
-    info4:
-      '‣ Integrated Solana Blockchain to interact with the $BONK contract to send and receive transactions  ',
-    info5: '‣ Hosted on Linode, deployed to Vercel and connected to a custom domain',
+      '‣ Full-stack web app in NextJS / Pocketbase stores your wallet and $BONK in PB as a user ',
+    info4: '‣ Tracks the amount of $BONK in your wallet and the amount of burns  ',
+    info5:
+      '‣ Integrated Solana Blockchain to interact with the $BONK contract to send and receive transactions',
     info6: '',
     info7: '',
     info8: '',
