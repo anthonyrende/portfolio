@@ -4,13 +4,13 @@ import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import GameOfLifeGIF from '../../images/game-of-life-optimized.gif';
+import rightArrowIcon from '../../images/right-arrow.png';
 // import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume, url, icon } = about;
-  // ^ add in:img,
+  const { paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume, url } = about;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -51,12 +51,14 @@ const About = () => {
                       easing: 'cubic-bezier(.03,.98,.52,.99)',
                     }}
                   >
-                    <div data-tilt className="thumbnail rounded">
+                    <div data-tilt className="thumbnail rounded game-of-life">
                       <img
                         src={GameOfLifeGIF}
                         href={url}
                         target="_blank"
                         alt="Conway's Game of Life"
+                        id="game-of-life"
+                        className="about-wrapper__game-of-life"
                       />
                     </div>
                   </Tilt>
@@ -80,7 +82,7 @@ const About = () => {
                   }}
                 >
                   <img
-                    src={icon}
+                    src={rightArrowIcon}
                     alt="right-arrow icon"
                     width={20}
                     height={20}
@@ -104,7 +106,7 @@ const About = () => {
                   }}
                 >
                   <img
-                    src={icon}
+                    src={rightArrowIcon}
                     alt="right-arrow icon"
                     width={20}
                     height={20}
@@ -128,7 +130,7 @@ const About = () => {
                   }}
                 >
                   <img
-                    src={icon}
+                    src={rightArrowIcon}
                     alt="right-arrow icon"
                     width={20}
                     height={20}
@@ -140,8 +142,12 @@ const About = () => {
                     }}
                   />
                   <p className="about-wrapper__info-skills">
-                    {paragraphThree ||
-                      'My main skills are TypeScript, React, Tailwind, Node/Express, REST & GraphQL, Apollo, Python, PostgreSQL, Linux and other tools in the JAM stack'}
+                    {paragraphThree || 'My main skills are:'}
+                    <br />
+                    <span style={{ color: 'black' }}>
+                      TypeScript, React, Tailwind, Node/Express, REST & GraphQL, Apollo, Python,
+                      PostgreSQL, Linux and other tools in the JAM stack
+                    </span>
                   </p>
                 </div>
                 <div
@@ -152,7 +158,7 @@ const About = () => {
                   }}
                 >
                   <img
-                    src={icon}
+                    src={rightArrowIcon}
                     alt="right-arrow icon"
                     width={20}
                     height={20}
@@ -165,7 +171,7 @@ const About = () => {
                   />
                   <p className="about-wrapper__info-text ">
                     {paragraphFour ||
-                      'In the unlikely event that Im not hunched over a computer, I love to practice yoga, play video games, consume sci-fi, sharpen my guitar skills, or catch a show around NYC ^_^'}
+                      'When Im not coding: I practice kriya yoga, meditation, consume sci-fi, sharpen my guitar skills, play video games, catch a show around NYC, but generally I strive to improve myself as a human being :)'}
                   </p>
                 </div>
                 {resume && (

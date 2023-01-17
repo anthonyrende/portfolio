@@ -7,6 +7,23 @@
   margin-bottom: -1px;
   color: $white-color;
 
+  background: linear-gradient(315deg, $secondary-color 3%, rgb(59, 155, 250) 38%, rgb(218, 177, 43) 68%, $primary-color 98%);
+  // background: linear-gradient(135deg, $primary-color 0%, $secondary-color 70%, rgba(101,0,94,1) 30%);
+    animation: gradient 5s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
   @include respond(tab-land) {
     padding: 10rem 0;
     clip-path: none;

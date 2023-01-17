@@ -55,6 +55,7 @@ const Header = () => {
             padding: '20px',
             width: '100%',
             // display: 'flex',
+            overflow: 'hidden',
           }}
         >
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
@@ -62,7 +63,7 @@ const Header = () => {
               {'Hi, my name is '}
               <span className="text-color-main">Anthony</span>,
               <br />
-              <div className="typewriter" style={{ width: '100%' }}>
+              <div className="typewriter" style={{ width: '90%' }}>
                 I&apos;m a Full-stack Dev...
               </div>
             </h1>
