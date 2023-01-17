@@ -95,7 +95,7 @@ const About = () => {
                   />
                   <p className="about-wrapper__info-text">
                     {paragraphOne ||
-                      "I'm a Brooklyn based Software Developer with experience on *both* ends of the stack, focused on shipping meaningful, genuine contributions to colleagues, stakeholders, and end-users"}
+                      'Brooklyn based Software Developer with experience on *both* ends of the stack, focused on shipping meaningful, genuine contributions to colleagues, stakeholders, and end-users'}
                   </p>
                 </div>
                 <div
@@ -145,8 +145,8 @@ const About = () => {
                     {paragraphThree || 'My main skills are:'}
                     <br />
                     <span style={{ color: 'black' }}>
-                      TypeScript, React, Tailwind, Node/Express, REST & GraphQL, Apollo, Python,
-                      PostgreSQL, Linux and other tools in the JAM stack
+                      TypeScript, React, NextJS, Tailwind, Node/Express, REST/GraphQL, Apollo,
+                      Python, PostgreSQL and other modern popular tools in the JAM stack
                     </span>
                   </p>
                 </div>
@@ -169,9 +169,14 @@ const About = () => {
                       marginTop: '10px',
                     }}
                   />
-                  <p className="about-wrapper__info-text ">
-                    {paragraphFour ||
-                      'When Im not coding: I practice kriya yoga, meditation, consume sci-fi, sharpen my guitar skills, play video games, catch a show around NYC, but generally I strive to improve myself as a human being :)'}
+                  <p className="about-wrapper__info-text " style={{ color: 'white' }}>
+                    {paragraphFour || 'When Im not coding:'}
+                    <br />
+                    <span style={{ color: 'black' }}>
+                      I practice kriya yoga, meditation, consume sci-fi, sharpen my guitar skills,
+                      play video games, catch a show around NYC-- but generally, I just strive to
+                      improve myself as a human being :)
+                    </span>
                   </p>
                 </div>
                 {resume && (
